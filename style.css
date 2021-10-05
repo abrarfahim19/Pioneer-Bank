@@ -1,10 +1,31 @@
 body{
     padding: 100px 200px;
 }
-.login-area{
+.box-area{
     margin-top: 50px;
-    padding: 50px;
+    padding: 50px 20px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px gray;
 }
+#transaction-id{
+    display: none;
+}
 
+.box{
+    color: white;
+    margin:0 20px;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.deposit{
+    background-color: slateblue
+}
+
+.withdraw{
+    background-color:salmon
+}
+
+.total{
+    background-color: orange
+}

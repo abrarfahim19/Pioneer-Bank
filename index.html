@@ -11,7 +11,7 @@
 <body>
     <div class="welcome-body" id="welcome-id">
         <h1 class="text-center">Welcome to Pioneer Bank</h1>
-        <div class="login-area">
+        <div class="box-area">
             <h3>Email</h3>
             <input type="email" class="form-control" name="" id="" placeholder="Email">
             <br>
@@ -21,10 +21,48 @@
             <button class="btn btn-success" id='enter-btn'>Enter</button>
         </div>
     </div>
-    <script>
-        document.getElementById('enter-btn').addEventListener('click', function(){
-            document.getElementById("welcome-id").style.display = 'none'
-        })
-    </script>    
+    <div class="transaction-area" id="transaction-id">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposit box">
+                    <h5>Deposit</h5>
+                    <h2>$ <span id="depositSpan">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="withdraw box">
+                    <h5>Withdraw</h5>
+                    <h2>$ <span id="withdrawSpan">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="total box">
+                    <h5>Total</h5>
+                    <h2>$ <span id="totalID">1500</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box-area">
+                    <h3>Deposit</h3>
+                    <br>
+                    <input type="text" class="form-control" placeholder="$ amount you want to deposit" name="" id="depositTextID">
+                    <br>
+                    <button class="btn btn btn-success" id="depositBtn">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box-area">
+                    <h3>Withdraw</h3>
+                    <br>
+                    <input type="text" class="form-control" placeholder="$ amount you want to withdraw" name="" id="withdrawTextID">
+                    <br>
+                    <button class="btn btn btn-success" id="withdrawBtn">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="myScript.js"></script>    
 </body>
 </html>
